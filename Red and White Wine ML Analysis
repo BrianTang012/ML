@@ -166,14 +166,6 @@ k2.final
 #Output of above command
 #K-means clustering with 2 clusters of sizes 2780, 2118
 
-Cluster means:
-  fixed.acidity volatile.acidity citric.acid residual.sugar  chlorides free.sulfur.dioxide total.sulfur.dioxide    density        pH sulphates   alcohol
-1     0.3035383        0.1985153   0.2042494     0.11764521 0.12802980           0.1278771            0.3394348 0.16843534 0.4082963 0.3162665 0.2632221
-2     0.2808550        0.1888921   0.1974755     0.05099766 0.08429233           0.1005403            0.2485649 0.08732125 0.4485364 0.3105057 0.5923104
-    quality
-1 0.4130695
-2 0.5670444
-
 wine_scaled1 %>% mutate(Cluster = k2.final$cluster) %>% group_by(Cluster) %>% summarise_all("mean")
 wine_scaled1 %>% mutate(Cluster = k2.final$cluster) %>% group_by(Cluster) %>% summarise_all("range")
 wine_scaled1 %>% mutate(Cluster = k2.final$cluster) %>% group_by(Cluster) %>% count()
