@@ -3,9 +3,6 @@
 ## Module
 **PS0002 Introduction to Data Science and AI**
 
-## Grade Obtained
-**A**
-
 ## Project Overview
 This project focuses on classifying the quality of red and white wine based on various factors such as pH level, storage duration, and tannin level.
 
